@@ -77,7 +77,7 @@
       <h2>Receba as Notícias em Primeira Mão</h2>
       <p>Cadastre seu e-mail para receber boletins diários com as principais novidades da tecnologia.</p>
 
-      <form class="form-newsletter">
+      <form class="form-newsletter" onsubmit="alert('Obrigado pela inscrição! fique atento ao seu e-mail'); console.log('novo cadastro de newsletter recebido.'); return false;">
         <div class="campo-grupo">
           <label for="nome">Nome Completo</label>
           <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
@@ -97,7 +97,9 @@
   <footer class="rodape-site" id="contato">
     <p>&copy; 2026 Portal de Notícias ETEC - Todos os direitos reservados.</p>
     <p>Desenvolvido na disciplina de Programação Web 1.</p>
+    <button class="btn-suporte" onclick="alert('suporte tecnico: suporte@etecnews.com.br')">falar com suporte</button>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
